@@ -22,3 +22,12 @@ def patient_history(request, patient_id):
     return render(request, 'patients/history.html', {
         'patient': patient,
     })
+    
+from django.shortcuts import render 
+from django.views.generic.edit import CreateView
+from .models import Patient
+
+class PatientCreate(CreateView):
+    model = Patient
+    fields = ['patient_name', 'patient_lastname', 'patient_species', 'patient_age', 'patient_gender', 'patient_weight', 'color_color' ]
+    success_url = '/patients/'
