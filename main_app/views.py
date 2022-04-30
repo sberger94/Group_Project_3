@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render
+from .models import Patient
 
 # Create your views here.
 
@@ -12,4 +13,5 @@ def about (request):
     return render(request, 'about.html')
 
 def patients_index(request):
-    return render(request, 'patient/index.html')
+    patients = Patient.objects.all()
+    return render(request, 'patients/index.html', {'patients': patients})
