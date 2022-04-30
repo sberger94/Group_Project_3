@@ -1,7 +1,7 @@
 {% load static %}
 
 <nav class="navbar navbar-light bg-light">
-  <div class="container" style="display: flex">
+  <div class="container" style="display: flex; justify-content: space-between;">
     <div style="display: flex; justify-content: left">
       <div class="dropdown">
         <button class="btn-lg btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -14,8 +14,8 @@
         </ul>
       </div>
     </div>
-    <div style="text-align: center">
-      <a class="navbar-brand" href="#">
+    <div>
+      <a class="navbar-brand" style="padding-left: 100px; display: flex; justify-content: center" href="#">
         <img src="{% static 'images/brand_logo.png' %}">
       </a>
     </div>
