@@ -1,0 +1,22 @@
+.navbar {
+    border-bottom: 1px solid black;
+    /* background: white; */
+}
+
+.navbar-brand img{
+    width: 55%;
+}
+
+.navbar li {
+    font-size: 30px; 
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu a{
+    font-size: 25px;
+}

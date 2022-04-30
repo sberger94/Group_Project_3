@@ -1,14 +1,33 @@
+{% load static %}
+
 <nav class="navbar navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="images/brand_logo.png" alt="" width="30" height="24">
-    </a>
+  <div class="container" style="display: flex">
+    <div style="display: flex; justify-content: left">
+      <div class="dropdown">
+        <button class="btn-lg btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          &nbsp Menu &nbsp
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">About</a></li>
+          <li><a class="dropdown-item" href="#">Add Patient</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align: center">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'images/brand_logo.png' %}">
+      </a>
+    </div>
     <div style="display: flex; justify-content: flex-end">
       <ul>
-        <li style="list-style: none;"><a style="text-decoration: none" href="#">About</a></li>
+        <li><a href="#">Login</a></li>
       </ul>
       <ul>
-        <li style="list-style: none;"><a style="text-decoration: none" href="#">Add Patient</a></li>
+        <li><a href="#">| </a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Signup</a></li>
       </ul>
     </div>
   </div>

@@ -4,12 +4,49 @@
 
 <h1>This is the patient's history page!</h1>
 
+<div style=" font-size: 20px; margin-left: 20px; width: 50vw; display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(7, 1fr)">
+    <div style="margin: 20px 0;" class="bg-$orange-200 text-dark">Name: </div>
+    <div style="margin: 20px 40px;">{{patient.patient_name}}</div>
+    <div style="margin: 20px 0;">Last Name: </div>
+    <div style="margin: 20px 40px;">{{patient.patient_lastname}}</div>
+    <div style="margin: 20px 0;">Species: </div>
+    <div style="margin: 20px 40px;">{{patient.patient_species}}</div>
+    <div style="margin: 20px 0;">Age: </div>
+    <div style="margin: 20px 40px;">{{patient.patient_age}}</div>
+    <div style="margin: 20px 0;">Gender: </div>
+    <div style="margin: 20px 40px;">{{patient.patient_gender}}</div>
+    <div style="margin: 20px 0;">Weight: </div>
+    <div style="margin: 20px 40px;">{{patient.patient_weight}}</div>
+    <div style="margin: 20px 0;">Color: </div>
+    <div style="margin: 20px 40px;">{{patient.color_color}}</div>
+</div>
+
+    <!-- <tr>
+        <th>Data Type</th>
+        <th>Information</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>Last Name</td>
+        <td>Species</td>
+        <td>Age</td>
+        <td>Gender</td>
+        <td>Weight</td>
+        <td>Color</td>
+    </tr>
+    <tr>
+        <td> {{patient.patient_name}} </td>
+        <td> {{patient.patient_lastname}} </td>
+        <td> {{patient.patient_species}} </td>
+        <td> {{patient.patient_age}} </td>
+        <td> {{patient.patient_gender}} </td>
+        <td> {{patient.patient_weight}} </td>
+        <td> {{patient.patient_color}} </td>
+    </tr> -->
+</table>
 
 
-
-  
 
 
 
 {% endblock content %}
-    
