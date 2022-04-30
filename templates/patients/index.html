@@ -1,8 +1,30 @@
 {% extends 'base.html' %}
 
+{% block content %}
+
+<h1>This is the patients page!</h1>
+
+
+
 {% for patient in patients %}
     <div>
-        <p>Patient Name: {{ patient.patient_name }}</p>
+        <div class="card text-center" style="width: 75vw; margin: 40px auto;">
+            <div class="card-header" >
+              Patient
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ patient.patient_name}}</h5>
+              <p class="card-text">{{ patient.patient_species }}</p>
+              <a href="{% url 'patient_history' patient.id %}" class="btn btn-primary">History</a>
+            </div>
+            <div class="card-footer text-muted">
+                Patient admitted: {{patient.created_date }} 
+            </div>
+          </div>
     </div>
 
 {% endfor %}
+
+{% endblock content %}
+    
+
